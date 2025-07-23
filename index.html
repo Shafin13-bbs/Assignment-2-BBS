@@ -9,19 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-         .noto-serif{
-         font-family: "Noto Serif", serif;
-         font-optical-sizing: auto;
-         font-weight: normal ;
-         font-style: normal;
-         font-variation-settings:"wdth" 100;
+        .noto-serif-font {
+           font-family: "Noto Serif", serif;
+           font-optical-sizing: auto;
+           font-weight: normal;
+           font-style: normal;
+           font-variation-settings:"wdth" 100;
         }
     </style>
 
 </head>
-<body>
+<body class="noto-serif-font">
     <header>
-
+        <nav class="flex gap justify-around mt-20 items-center">
+            <div>
+                <img src="assets/logo.png" alt="Brand Logo">
+            </div>
+            <div >
+                <ul class="flex gap-15">
+                    <li class="font-bold hidden sm:block">Home</li>
+                    <li class="text-gray-400 hidden sm:block">Shop</li>
+                    <li class="text-gray-400 hidden sm:block  ">About us</li>
+                    <li class="flex gap-2 font-normal">
+                        <img src="assets/shopping-cart.png" alt="Shopping Cart">
+                        <p>Cart($56)</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Banner part -->
+         <div class="flex justify-center mt-20 md:mt-50 items-end ">
+            <div >
+                <img class="block sm:hidden" src="assets/hero-flower.png" alt="">
+                <h1 class="text-4xl mt-8 font-extrabold pl-8 md:text-6xl">
+                    ALWAYS <span class="text-orange-500">FRESH <br> FLOWERS</span>
+                </h1>
+                <br>
+                <p class="text-gray-400 pl-8 hidden sm:block ">
+                    Indulge your senses with the beauty and fragrance of <br> our fresh flower shop. From classic roses to exotic<br>blooms, we offer a wide variety of fresh flowers that <br> are perfect for any occasion. 
+                </p>
+                <p class="block sm:hidden text-gray-400 px-8">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
+            <img class="hidden sm:block " src="assets/hero-flower.png" alt="">
+         </div>
     </header>
     <main>
 
